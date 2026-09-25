@@ -1,0 +1,19 @@
+﻿# Python
+.venv/
+__pycache__/
+*.pyc
+*.keras
+*.joblib
+
+# Data
+data/raw/
+
+# Node
+node_modules/
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
