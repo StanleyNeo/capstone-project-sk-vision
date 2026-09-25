@@ -5,6 +5,16 @@ An end-to-end Deep Learning web application that classifies images into 10 categ
 ## Architecture
 React (Vite) -> Express Gateway (Port 5000) -> FastAPI (Port 5001) -> TensorFlow/Keras Model
 
+## Demo & Screenshots
+
+| Class | Prediction | Class | Prediction |
+| :---: | :---: | :---: | :---: |
+| **Airplane** | ![Airplane](docs/screenshot/test_airplane.png) | **Automobile** | ![Automobile](docs/screenshot/test_automobile.png) |
+| **Bird** | ![Bird](docs/screenshot/test_bird.png) | **Cat** | ![Cat](docs/screenshot/test_cat.png) |
+| **Deer** | ![Deer](docs/screenshot/test_dear.png) | **Dog** | ![Dog](docs/screenshot/test_dog.png) |
+| **Frog** | ![Frog](docs/screenshot/test_frog.png) | **Horse** | ![Horse](docs/screenshot/test_horse.png) |
+| **Ship** | ![Ship](docs/screenshot/test_ship.png) | **Truck** | ![Truck](docs/screenshot/test_truck.png) |
+
 ## Model Comparison & Selection
 
 | Model | Algorithm | Accuracy | F1 Score | Train Time | Predict Time | Model Size |
