@@ -2,6 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+
 function App() {
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
@@ -31,8 +33,8 @@ function App() {
     formData.append('file', file);
 
     try {
-      // Connect to the Express Gateway on port 5000
-      const response = await axios.post('http://localhost:5000/api/classify', formData, {
+      // Connect to FastAPI on Render
+      const response = await axios.post(`${API}/classify`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResult(response.data.data);
