@@ -12,7 +12,7 @@ from PIL import Image
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from tflite_runtime.interpreter import Interpreter
+from ai_edge_litert.interpreter import Interpreter
 
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / 'api' / '.env')
@@ -124,4 +124,5 @@ async def classify_image(file: UploadFile = File(...)):
 if __name__ == '__main__':
     import uvicorn
     uvicorn.run(app, host='0.0.0.0', port=PORT)
+
 
