@@ -53,8 +53,8 @@ async def lifespan(app: FastAPI):
     print(' CIFAR-10 VISION API (PYTHON/FASTAPI)  v1.0')
     print('=' * 56)
     print(f' Port: {PORT}     URL: http://localhost:{PORT}')
-    print(f' Model loaded OK  ({MODEL_META[\"algorithm\"]})')
-    print(f' Input: {INPUT_DETAILS[0][\"shape\"]}  Output: {OUTPUT_DETAILS[0][\"shape\"]}')
+    print(f" Model loaded OK  ({MODEL_META['algorithm']})")
+    print(f" Input: {INPUT_DETAILS[0]['shape']}  Output: {OUTPUT_DETAILS[0]['shape']}")
     print(' Endpoints:')
     print('   GET  /health      service + model status')
     print('   POST /classify    multipart image -> {label, confidence}')
@@ -124,3 +124,4 @@ async def classify_image(file: UploadFile = File(...)):
 if __name__ == '__main__':
     import uvicorn
     uvicorn.run(app, host='0.0.0.0', port=PORT)
+
