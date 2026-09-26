@@ -1,3 +1,16 @@
+# CIFAR-10 Image Classifier
+
+🔗 **Live demo:** https://capstone-project-sk-vision-ui.vercel.app
+🔗 **API:** https://capstone-project-sk-vision-api.onrender.com
+🔗 **API docs:** https://capstone-project-sk-vision-api.onrender.com/docs
+
+**Stack:** MobileNetV2 transfer learning (TFLite, 2.5 MB) · FastAPI on Render · React (Vite) on Vercel
+
+> ⚠️ Free tier: backend spins down after 15 min of inactivity. First request may take ~50s.
+
+---
+
+
 # CIFAR-10 Image Classifier — v1.0
 
 An end-to-end Deep Learning web application that classifies images into 10 categories using Transfer Learning (MobileNetV2).
